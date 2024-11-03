@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 182, 245);
+    color: #880b94;
+    
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   min-width: 100%;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Background image settings */
+ background-image: url('back6.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+    padding: 1em;
+    
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 20px;
+    height: auto;
+    object-fit: contain;
+    
+}
+ 
+.left {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.side-bar {
+    display: flex; 
+    flex-direction: column; 
+    /* Background image settings */
+ background-image: url('back4.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+    padding: 1em;
+    flex-basis: 30%;
+    
+}
+.side-bar a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+.side-bar hr {    
+    border-bottom: 2px solid #e90c9f;
+}
+.journal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-top: 1em;
+}
+.side-bar h5 {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 1px 0;
+}
+
+.center-bar {
+    display: flex; 
+    flex-direction: column; 
+    /* Background image settings */
+ background-image: url('back5.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+    padding: 1em;
+    flex-basis: 70%;
+    
+}
+.center-bar a {
+    text-decoration:none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+.center-bar hr {    
+    border-bottom: 2px solid #e90c9f;
+}
+
+.right {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.bottom-bar {
+    display: flex; 
+    flex-direction: column;  
+    /* Background image settings */
+ background-image: url('back3.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+    padding: 1em;
+    flex-basis: 100%;
+    
+}
+.bottom-bar a {
+    text-decoration:none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+.bottom-bar hr {    
+    border-bottom: 2px solid #e90c9f;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Row container */
+  .row {
+    display: flex;
+    gap: 0px;
+  }
+  
+  /* Column */
+  .column {
+    flex: 1;
+    padding: 20px;
+    /* Background image settings */
+ background-image: url('back2.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  .column img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .column video {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+/* Frame styling for images */
+.frame-image {
+    width: 200px; /* Adjust size as needed */
+    border: 1px solid #333; /* Frame color and thickness */
+    padding: 5px; /* Adds space between image and frame */
+    border-radius: 8px; /* Rounded corners for the frame */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  /* Background image settings */
+  background-image: url('back1.jpg'); /* Update path to your image */
+  background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+  
+  /* Frame styling for videos */
+  .frame-video {
+    width: 200px; /* Adjust size as needed */
+    border: 1px solid #ca1a1a; /* Frame color and thickness */
+    padding: 5px; /* Space between video and frame */
+    border-radius: 8px; /* Rounded corners for the frame */
+    box-shadow: 0px 4px 8px rgba(204, 58, 197, 0.2); /* Optional shadow */
+ /* Background image settings */
+ background-image: url('back1.jpg'); /* Update path to your image */
+ background-size: cover; /* Adjust this as needed (cover, contain, etc.) */
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+/*
+.video {
+    position: relative;
+    width: 500px;
+    height: 250px; 
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    pointer-events: none; /* Prevent interaction with the video *
+  }
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  /* Show video on hover *
+  .video:hover .hover{
+    display: block;
+  }
+
+   .video img{
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    padding-top: 1em;
+  }
